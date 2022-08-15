@@ -24,7 +24,8 @@
   <ItemGroup>
     <ClInclude Include="Math\Definitions\Definitions.h" />
     <ClInclude Include="Math\Dynamic Array\List.h" />
-    <ClInclude Include="Math\Vectors and Matrices\Vector.h" />
+    <ClInclude Include="Math\Vectors and Matrices\Vector2.h" />
+    <ClInclude Include="Math\Vectors and Matrices\Vector3.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

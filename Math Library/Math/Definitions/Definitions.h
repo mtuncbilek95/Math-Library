@@ -6,13 +6,16 @@
  *  Current Features:
  *  - Sized numbers, such as int8, uint64 etc.
  *  - inline defined as FORCEINLINE
+ *  - cmath included
+ *
+ *  W.I.P Features:
+ *  - cmath will be replaced with Math.h
  *  
  *****************************************************************************************************/
 
 #ifndef DEFINITIONS_H
 #define DEFINITIONS_H
 
-#define uint uint32
 #define FORCEINLINE inline
 
 typedef signed char        int8;
@@ -25,3 +28,10 @@ typedef unsigned int       uint32;
 typedef unsigned long long uint64;
 
 #endif
+
+#ifndef MATH_H
+#define MATH_H
+
+#include <cmath>
+
+#endif  //  ! MATH_H

@@ -1,9 +1,8 @@
 ﻿#include <stdio.h>
-
 #include "Math/Definitions/Definitions.h"
 #include "Math/Dynamic Array/List.h"
-#include "Math/Vectors and Matrices/Vector.h"
-
+#include "Math/Vectors and Matrices/Vector2.h"
+#include "Math/Vectors and Matrices/Vector3.h"
 
 int main(int argumentCount, char* argumentValue[])
 {
