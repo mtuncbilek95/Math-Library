@@ -5,19 +5,16 @@
  *  This is a standart Dynamic Array library which is created to use instead of array that is defined as [].
  *
  *  Current capabilities:
- *  -   Size, At, Add, Remove, RemoveAll, InsertFirst, InsertByIndex and Swap functions are working.
+ *  -   All written functions are working properly.
  *  -   [] operator is also working correctly.
  *
  *  W.I.P Features:
- *  -   RemoveFirst function will be written.
  *  -   Thinking about adding a Sort algorithm.
  *  
  *****************************************************************************************************/
 
 #ifndef LIST_H
 #define LIST_H
-
-//  TODO: RemoveFirst
 
 template <typename T>
 class List
@@ -142,6 +139,11 @@ void List<T>::InsertByIndex(const T& element, unsigned index)
 template <typename T>
 void List<T>::RemoveFirst()
 {
+    for(unsigned i = 0; i < currentSize-1; i++)
+    {
+        Array[i] = Array[i+1];
+    }
+    currentSize--;
 }
 
 template <typename T>

@@ -23,12 +23,8 @@
 
 #endif  //  ! MATH_H
 
-
 #ifndef VECTOR3_H
 #define VECTOR3_H
-
-namespace Math
-{
 
 template <typename T = float>
 class Vector3D
@@ -39,11 +35,11 @@ public:
 
     //	Initialization constructor.
     Vector3D(T Tx, T Ty, T Tz);
-    
+
     float X;
     float Y;
     float Z;
-    
+
     //	Gives the distance from origin.
     float Length();
 
@@ -232,8 +228,8 @@ bool Vector3D<T>::operator==(Vector3D Other)
 {
     return Other.X == X && Other.Y == Y && Other.Z ? true : false;
 }
-    
+
 typedef Vector3D<> Vector3;
-    
-}
+
+
 #endif // ! VECTOR3_H

@@ -1,8 +1,11 @@
-﻿#include <stdio.h>
+﻿#include <condition_variable>
+#include <stdio.h>
 #include "Math/Definitions/Definitions.h"
 #include "Math/Dynamic Array/List.h"
 #include "Math/Vectors and Matrices/Vector2.h"
 #include "Math/Vectors and Matrices/Vector3.h"
+
+void PrintArray(List<float> Array);
 
 int main(int argumentCount, char* argumentValue[])
 {
@@ -12,80 +15,28 @@ int main(int argumentCount, char* argumentValue[])
     {
         myArray1.Add((float)(i+1));
     }
-    
-    printf("Array: ");
-    for(unsigned i = 0; i<myArray1.Size(); i++)
-    {
-        if(i == myArray1.Size()-1)
-        {
-            printf("%.0f.\n", myArray1[i]);
-        }
-        else
-        {
-            printf("%.0f, ", myArray1[i]);
-        }
-    }
-    printf("Array size: %hu.\n", myArray1.Size());
-    myArray1.Remove(17);
 
-    printf("Array: ");
-    for(unsigned i = 0; i<myArray1.Size(); i++)
-    {
-        if(i == myArray1.Size()-1)
-        {
-            printf("%.0f.\n", myArray1[i]);
-        }
-        else
-        {
-            printf("%.0f, ", myArray1[i]);
-        }
-    }
-    printf("Array size: %hu \n", myArray1.Size());
+    PrintArray(myArray1);
 
-    List<float> myArray2;
-    
-    for(unsigned i = 0; i<20; i++)
-    {
-        myArray2.Add((float)((i+1)*2));
-    }
-    
-    printf("Array: ");
-    for(unsigned i = 0; i<myArray2.Size(); i++)
-    {
-        if(i == myArray2.Size()-1)
-        {
-            printf("%.0f.\n", myArray2[i]);
-        }
-        else
-        {
-            printf("%.0f, ", myArray2[i]);
-        }
-    }
-    printf("Array size: %hu.\n", myArray2.Size());
-    myArray2.Remove(17);
+    myArray1.RemoveFirst();
 
-    printf("Array: ");
-    for(unsigned i = 0; i<myArray2.Size(); i++)
-    {
-        if(i == myArray2.Size()-1)
-        {
-            printf("%.0f.\n", myArray2[i]);
-        }
-        else
-        {
-            printf("%.0f, ", myArray2[i]);
-        }
-    }
-    printf("Array size: %hu \n", myArray2.Size());
-    
-    List<List<float>> Arrays;
-
-    Arrays.Add(myArray1);
-    Arrays.Add(myArray2);
-    
-    printf("%f\n",Arrays[0][5]);
-    Arrays.Swap(0,1);
-    
-    printf("%f\n",Arrays[0][5]);
+    PrintArray(myArray1);
     return 0;
+}
+
+void PrintArray(List<float> Array)
+{
+    printf("Array: ");
+    for(unsigned i = 0; i<Array.Size(); i++)
+    {
+        if(i == Array.Size()-1)
+        {
+            printf("%.0f.\n", Array[i]);
+        }
+        else
+        {
+            printf("%.0f, ", Array[i]);
+        }
+    }
+    printf("Array size: %hu \n", Array.Size());
 }
