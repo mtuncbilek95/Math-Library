@@ -5,6 +5,8 @@
 #include "Math/Vectors and Matrices/Vector2.h"
 #include "Math/Vectors and Matrices/Vector3.h"
 
+
+
 void PrintArray(List<float> Array);
 
 int main(int argumentCount, char* argumentValue[])
@@ -16,8 +18,6 @@ int main(int argumentCount, char* argumentValue[])
         myArray1.Add((float)(i+1));
     }
 
-    PrintArray(myArray1);
-
     myArray1.RemoveFirst();
 
     PrintArray(myArray1);
@@ -27,16 +27,6 @@ int main(int argumentCount, char* argumentValue[])
 void PrintArray(List<float> Array)
 {
     printf("Array: ");
-    for(unsigned i = 0; i<Array.Size(); i++)
-    {
-        if(i == Array.Size()-1)
-        {
-            printf("%.0f.\n", Array[i]);
-        }
-        else
-        {
-            printf("%.0f, ", Array[i]);
-        }
-    }
+    
     printf("Array size: %hu \n", Array.Size());
 }

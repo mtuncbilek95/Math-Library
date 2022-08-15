@@ -4,21 +4,13 @@
     <projectFile>Math Library/Math Library.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b44860d-7a59-4164-bc58-f4e4a990c153" name="Changes" comment="">
+    <list default="true" id="7b44860d-7a59-4164-bc58-f4e4a990c153" name="Changes" comment="updated">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Math Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Math Library/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Math Library/Math/Dynamic Array/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/Math/Dynamic Array/List.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Math Library/Math/Vectors and Matrices/Vector2.h" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/Math/Vectors and Matrices/Vector2.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Math Library/Math/Vectors and Matrices/Vector3.h" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/Math/Vectors and Matrices/Vector3.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Math Library/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.exe.recipe" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.exe.recipe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/CL.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/Math Library.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/Math Library.lastbuildstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/link.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/link.write.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/Math Library.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Math Library.pdb" afterDir="false" />
@@ -106,8 +98,16 @@
       <updated>1660559449151</updated>
       <workItem from="1660559451021" duration="1036000" />
       <workItem from="1660570469526" duration="1755000" />
-      <workItem from="1660583130918" duration="1609000" />
+      <workItem from="1660583130918" duration="2252000" />
     </task>
+    <task id="LOCAL-00001" summary="updated">
+      <created>1660591662908</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660591662908</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,5 +128,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
 </project>
