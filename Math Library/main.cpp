@@ -1,4 +1,5 @@
 ﻿#include <condition_variable>
+#include <iostream>
 #include <stdio.h>
 #include "Math/Definitions/Definitions.h"
 #include "Math/Dynamic Array/List.h"
@@ -11,6 +12,7 @@ void PrintArray(List<float> Array);
 
 int main(int argumentCount, char* argumentValue[])
 {
+    
     List<float> myArray1;
     
     for(unsigned i = 0; i<20; i++)

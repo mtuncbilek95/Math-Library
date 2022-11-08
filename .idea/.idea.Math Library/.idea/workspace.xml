@@ -4,14 +4,21 @@
     <projectFile>Math Library/Math Library.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b44860d-7a59-4164-bc58-f4e4a990c153" name="Changes" comment="" />
+    <list default="true" id="7b44860d-7a59-4164-bc58-f4e4a990c153" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Math Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Math Library/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Math Library/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/Math Library.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/Math Library.lastbuildstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/Math Library.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/vc143.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Math Library/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Math Library/x64/Debug/vc143.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/x64/Debug/Math Library.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/Math Library.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/Projects/Math Library/Math Library/Math/Dynamic Array/List.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -92,6 +99,7 @@
       <workItem from="1660559451021" duration="1036000" />
       <workItem from="1660570469526" duration="1755000" />
       <workItem from="1660583130918" duration="2516000" />
+      <workItem from="1667225765470" duration="1015000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1660591662908</created>
