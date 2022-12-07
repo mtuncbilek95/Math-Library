@@ -16,211 +16,201 @@
  *  
  *****************************************************************************************************/
 
-#ifndef MATH_H
-#define MATH_H
+#pragma once
 
 #include <cmath>
 
-#endif  //  ! MATH_H
-
-#ifndef VECTOR2_H
-#define VECTOR2_H
-
 namespace MathLib
 {
-    template <typename T = float>
-    class Vector2D
+    template <typename typeValue>
+    class Vector2d
     {
     public:
         //	If it is not initialized, it is zero vector.
-        Vector2D();
+        Vector2d();
         //	Initialization constructor.
-        Vector2D(T Tx, T Ty);
+        Vector2d(typeValue Tx, typeValue Ty);
 
-        float X;
-        float Y;
+        typeValue X;
+        typeValue Y;
 
         //	Gives the distance from origin.
-        float Length();
+        float length();
 
         //	Rates the current vector's each element in between 0 and 1.
-        Vector2D Normalize();
+        Vector2d normalize();
 
         //	Gives the distance of 2 vector points.
-        static float Distance(Vector2D& Vec1, Vector2D& Vec2);
+        static float distance(Vector2d& Vec1, Vector2d& Vec2);
 
         //	Scalar multiplication method called Dot Product. Returns float.
-        static float DotProduct(Vector2D& Vec1, Vector2D& Vec2);
+        static float dot_product(Vector2d& Vec1, Vector2d& Vec2);
 
-        //	2 Dimensional CrossProduct returns the Z value.
-        static float CrossProduct(Vector2D& Vec1, Vector2D& Vec2);
+        //	2 Dimensional cross_product returns the Z value.
+        static float cross_product(Vector2d& Vec1, Vector2d& Vec2);
 
         //	Gives the size of the Vector2 which is always equals 2.
-        static constexpr unsigned Num();
+        constexpr unsigned size();
 
         //	Vector2 + Vector2. Each element sums with the other vector's related element and creates whole new Vector2.
-        Vector2D operator+(Vector2D Other) const;
+        Vector2d operator+(Vector2d Other) const;
 
         //	Vector2 + float. Add each element the float parameter.
-        Vector2D operator+(T Other) const;
+        Vector2d operator+(typeValue Other) const;
 
         //	Vector2 * float. Multiplies each element with the float parameter.
-        Vector2D operator*(T Other) const;
+        Vector2d operator*(typeValue Other) const;
 
         //	Vector2 * float. Divides each element with the float parameter.
-        Vector2D operator/(T Other) const;
+        Vector2d operator/(typeValue Other) const;
 
         //	Vector2 + Vector2. Each element sums with the other vector's related element and overwrites on related Vector2.
-        Vector2D operator+=(Vector2D Other);
+        Vector2d operator+=(Vector2d Other);
 
         //	Vector + float. Each element sums with the other vector's related element and overwrites on related Vector2.
-        Vector2D operator +=(T Other);
+        Vector2d operator +=(typeValue Other);
 
         //	Vector2 - Vector2. Each element sums with the other vector's related element and overwrites on related Vector2.
-        Vector2D operator-=(Vector2D Other);
+        Vector2d operator-=(Vector2d Other);
 
         //	Vector - float. Each element subtract with the other vector's related element and overwrites on related Vector2.
-        Vector2D operator -=(T Other);
+        Vector2d operator -=(typeValue Other);
 
         //	Vector + float. Each element multiplies with the other vector's related element and overwrites on related Vector2.
-        Vector2D operator *=(T Other);
+        Vector2d operator *=(typeValue Other);
 
         //	Vector / float. Each element multiplies with the other vector's related element and overwrites on related Vector2.
-        Vector2D operator /=(T Other);
+        Vector2d operator /=(typeValue Other);
 
         //	Boolean that checks if both 2 dimensional Vector
-        bool operator ==(Vector2D Other);
+        bool operator ==(Vector2d Other);
     };
 
-    template <typename T>
-    constexpr unsigned Vector2D<T>::Num()
+    template <typename typeValue>
+    constexpr unsigned Vector2d<typeValue>::size()
     {
         return 2;
     }
 
-    template <typename T>
-    Vector2D<T>::Vector2D()
+    template <typename typeValue>
+    Vector2d<typeValue>::Vector2d()
     {
         X = 0;
         Y = 0;
     }
 
-    template <typename T>
-    Vector2D<T>::Vector2D(T Tx, T Ty)
+    template <typename typeValue>
+    Vector2d<typeValue>::Vector2d(typeValue Tx, typeValue Ty)
     {
         X = (float)Tx;
         Y = (float)Ty;
     }
 
-    template <typename T>
-    float Vector2D<T>::Length()
+    template <typename typeValue>
+    float Vector2d<typeValue>::length()
     {
         return sqrt(pow(X, 2) + pow(Y, 2));
     }
 
-    template <typename T>
-    Vector2D<T> Vector2D<T>::Normalize()
+    template <typename typeValue>
+    Vector2d<typeValue> Vector2d<typeValue>::normalize()
     {
-        return Vector2D(X / Length(), Y / Length());
+        return Vector2d(X / length(), Y / length());
     }
 
-    template <typename T>
-    float Vector2D<T>::Distance(Vector2D& Vec1, Vector2D& Vec2)
+    template <typename typeValue>
+    float Vector2d<typeValue>::distance(Vector2d& Vec1, Vector2d& Vec2)
     {
         return sqrt(pow((Vec2.X - Vec1.X), 2) + pow((Vec2.Y - Vec1.Y), 2));
     }
 
-    template <typename T>
-    float Vector2D<T>::DotProduct(Vector2D& Vec1, Vector2D& Vec2)
+    template <typename typeValue>
+    float Vector2d<typeValue>::dot_product(Vector2d& Vec1, Vector2d& Vec2)
     {
         return Vec1.X * Vec2.X + Vec1.Y * Vec2.Y;
     }
 
-    template <typename T>
-    float Vector2D<T>::CrossProduct(Vector2D& Vec1, Vector2D& Vec2)
+    template <typename typeValue>
+    float Vector2d<typeValue>::cross_product(Vector2d& Vec1, Vector2d& Vec2)
     {
         return Vec1.X * Vec2.Y - Vec1.Y * Vec2.X;
     }
 
-    template <typename T>
-    Vector2D<T> Vector2D<T>::operator+(Vector2D Other) const
+    template <typename typeValue>
+    Vector2d<typeValue> Vector2d<typeValue>::operator+(Vector2d Other) const
     {
-        return Vector2D((X + Other.X), (Y + Other.Y));
+        return Vector2d((X + Other.X), (Y + Other.Y));
     }
 
-    template <typename T>
-    Vector2D<T> Vector2D<T>::operator+(T Other) const
+    template <typename typeValue>
+    Vector2d<typeValue> Vector2d<typeValue>::operator+(typeValue Other) const
     {
-        return Vector2D((X + Other), (Y + Other));
+        return Vector2d((X + Other), (Y + Other));
     }
 
-    template <typename T>
-    Vector2D<T> Vector2D<T>::operator*(T Other) const
+    template <typename typeValue>
+    Vector2d<typeValue> Vector2d<typeValue>::operator*(typeValue Other) const
     {
-        return Vector2D((X * Other), (Y * Other));
+        return Vector2d((X * Other), (Y * Other));
     }
 
-    template <typename T>
-    Vector2D<T> Vector2D<T>::operator/(T Other) const
+    template <typename typeValue>
+    Vector2d<typeValue> Vector2d<typeValue>::operator/(typeValue Other) const
     {
-        return Vector2D((X / Other), (Y / Other));
+        return Vector2d((X / Other), (Y / Other));
     }
 
-    template <typename T>
-    Vector2D<T> Vector2D<T>::operator+=(Vector2D Other)
+    template <typename typeValue>
+    Vector2d<typeValue> Vector2d<typeValue>::operator+=(Vector2d Other)
     {
         X += Other.X;
         Y += Other.Y;
-        return Vector2D(X, Y);
+        return Vector2d(X, Y);
     }
 
-    template <typename T>
-    Vector2D<T> Vector2D<T>::operator+=(T Other)
+    template <typename typeValue>
+    Vector2d<typeValue> Vector2d<typeValue>::operator+=(typeValue Other)
     {
         X += Other;
         Y += Other;
-        return Vector2D(X, Y);
+        return Vector2d(X, Y);
     }
 
-    template <typename T>
-    Vector2D<T> Vector2D<T>::operator-=(Vector2D Other)
+    template <typename typeValue>
+    Vector2d<typeValue> Vector2d<typeValue>::operator-=(Vector2d Other)
     {
         X -= Other.X;
         Y -= Other.Y;
-        return Vector2D(X, Y);
+        return Vector2d(X, Y);
     }
 
-    template <typename T>
-    Vector2D<T> Vector2D<T>::operator-=(T Other)
+    template <typename typeValue>
+    Vector2d<typeValue> Vector2d<typeValue>::operator-=(typeValue Other)
     {
         X -= Other;
         Y -= Other;
-        return Vector2D(X, Y);
+        return Vector2d(X, Y);
     }
 
-    template <typename T>
-    Vector2D<T> Vector2D<T>::operator*=(T Other)
+    template <typename typeValue>
+    Vector2d<typeValue> Vector2d<typeValue>::operator*=(typeValue Other)
     {
         X *= Other;
         Y *= Other;
-        return Vector2D(X, Y);
+        return Vector2d(X, Y);
     }
 
-    template <typename T>
-    Vector2D<T> Vector2D<T>::operator/=(T Other)
+    template <typename typeValue>
+    Vector2d<typeValue> Vector2d<typeValue>::operator/=(typeValue Other)
     {
         X /= Other;
         Y /= Other;
-        return Vector2D(X, Y);
+        return Vector2d(X, Y);
     }
 
-    template <typename T>
-    bool Vector2D<T>::operator==(Vector2D Other)
+    template <typename typeValue>
+    bool Vector2d<typeValue>::operator==(Vector2d Other)
     {
         return Other.X == X && Other.Y == Y ? true : false;
     }
 }
-
-typedef MathLib::Vector2D<> Vector2;
-
-#endif  //  ! VVECTOR2_H

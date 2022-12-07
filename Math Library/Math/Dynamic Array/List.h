@@ -2,7 +2,7 @@
 
 /*****************************************************************************************************
  *
- *  This is a standart Dynamic Array library which is created to use instead of array that is defined as [].
+ *  This is a standart Dynamic Array library which is created to use instead of std library.
  *
  *  Current capabilities:
  *  -   All written functions are working properly.
@@ -15,6 +15,7 @@
 
 #ifndef LIST_H
 #define LIST_H
+
 
 namespace MathLib
 {

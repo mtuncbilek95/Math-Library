@@ -58,7 +58,7 @@ namespace MathLib
         static Vector3D CrossProduct(Vector3D& Vec1, Vector3D& Vec2);
 
         //	Gives the size of the Vector3 which is always equals 3.
-        static constexpr unsigned Num();
+        constexpr unsigned Num();
 
         //	Vector3 + Vector3. Each element sums with the other vector's related element.
         Vector3D operator+(Vector3D& Other) const;

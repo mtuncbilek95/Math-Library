@@ -1,34 +1,26 @@
-﻿#include <condition_variable>
-#include <iostream>
-#include <stdio.h>
-#include "Math/Definitions/Definitions.h"
+﻿#include <iostream>
+#include <vector>
+
 #include "Math/Dynamic Array/List.h"
-#include "Math/Vectors and Matrices/Vector2.h"
-#include "Math/Vectors and Matrices/Vector3.h"
-
-
-
-void PrintArray(List<float> Array);
+#include "Math/Functions/Sort.h"
 
 int main(int argumentCount, char* argumentValue[])
 {
-    
-    List<float> myArray1;
-    
-    for(unsigned i = 0; i<20; i++)
-    {
-        myArray1.Add((float)(i+1));
-    }
+    List<int> myList;
+    myList.Add(4);
+    myList.Add(6);
+    myList.Add(1);
+    myList.Add(2);
+    myList.Add(7);
+    myList.Add(3);
+    myList.Add(5);
 
-    myArray1.RemoveFirst();
+    std::vector<int> a = {5,7,3,1,4,2,6};
 
-    PrintArray(myArray1);
+    MathLib::Sort::BubbleSort(myList);
+
+    for (unsigned i = 0; i < myList.Size(); i++)
+        std::cout << myList[i] << std::endl;
+    
     return 0;
-}
-
-void PrintArray(List<float> Array)
-{
-    printf("Array: ");
-    
-    printf("Array size: %hu \n", Array.Size());
 }
